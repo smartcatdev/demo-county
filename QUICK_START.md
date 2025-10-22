@@ -63,6 +63,25 @@ npm start           # Run production build
 npm run lint        # Check for errors
 ```
 
+## 🌐 Use a Realistic Domain (Optional)
+
+Make your demo more impressive with a custom local domain!
+
+**Quick setup:**
+```bash
+sudo ./setup-local-domain.sh
+```
+
+Then access at: `http://democounty.gov.local:3000`
+
+**For clean URLs (no port):**
+```bash
+sudo npm run dev -- -p 80
+```
+Access at: `http://democounty.gov.local`
+
+See `LOCAL_DOMAIN_SETUP.md` for detailed instructions.
+
 ## 🎯 For Your ICMA Demo
 
 **The chatbot will appear on all pages** as a bottom-right widget (standard placement).

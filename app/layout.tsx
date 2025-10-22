@@ -33,7 +33,7 @@ export default function RootLayout({
         
         {/* Modern React Chatbot Widget */}
         <Script
-          src={process.env.NEXT_PUBLIC_CHATBOT_URL || 'https://app.ja-staging.net/frontdesk/chatbot.min.js'}
+          src={process.env.NEXT_PUBLIC_CHATBOT_URL || '/chatbot.min.js'}
           strategy="afterInteractive"
         />
       </body>
