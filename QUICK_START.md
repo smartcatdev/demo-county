@@ -9,13 +9,18 @@ npm run dev
 ```
 Then open: **http://localhost:3000**
 
-### Step 2: Add Your Chatbot
+### Step 2: Chatbot (Already Configured!)
+The chatbot is pre-configured with a default URL and will work immediately.
+
+**To use a different chatbot:**
 1. Open `.env.local`
 2. Update the chatbot URL:
 ```bash
 NEXT_PUBLIC_CHATBOT_URL=https://your-chatbot-url.com/widget.js
 ```
 3. Restart the dev server (Ctrl+C, then `npm run dev`)
+
+**Default:** `https://app.ja-staging.net/frontdesk/chatbot.min.js`
 
 ### Step 3: Deploy for Conference
 ```bash

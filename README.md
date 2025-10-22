@@ -45,9 +45,11 @@ http://localhost:3000
 
 ## Adding Your Chatbot Widget
 
-The chatbot URL is configured using environment variables for easy updates.
+The chatbot is pre-configured with a default staging URL: `https://app.ja-staging.net/frontdesk/chatbot.min.js`
 
-### Quick Method (Recommended)
+**The chatbot will work immediately without any configuration!** 
+
+### To Use a Different Chatbot URL (Optional)
 
 1. Open the file `.env.local`
 
@@ -62,7 +64,7 @@ NEXT_PUBLIC_CHATBOT_URL=https://your-chatbot-url.com/widget.js
 npm run dev
 ```
 
-4. The chatbot widget will now appear on all pages.
+4. Your custom chatbot will now appear on all pages.
 
 ### Alternative: Direct Code Edit
 

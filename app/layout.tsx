@@ -32,12 +32,10 @@ export default function RootLayout({
         </div>
         
         {/* Modern React Chatbot Widget */}
-        {process.env.NEXT_PUBLIC_CHATBOT_URL && (
-          <Script
-            src={process.env.NEXT_PUBLIC_CHATBOT_URL}
-            strategy="afterInteractive"
-          />
-        )}
+        <Script
+          src={process.env.NEXT_PUBLIC_CHATBOT_URL || 'https://app.ja-staging.net/frontdesk/chatbot.min.js'}
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

@@ -2,13 +2,16 @@
 
 ## Quick Start (Environment Variable Method - Recommended)
 
-Your Demo County website uses environment variables for easy chatbot configuration. Follow these simple steps:
+Your Demo County website uses environment variables for easy chatbot configuration. 
 
-### Step 1: Update the Environment Variable
+**Default Behavior:** If no environment variable is set, the chatbot will load from:
+`https://app.ja-staging.net/frontdesk/chatbot.min.js`
+
+### Step 1: Update the Environment Variable (Optional)
 
 Open the file: `.env.local`
 
-### Step 2: Set Your Chatbot URL
+### Step 2: Set Your Custom Chatbot URL
 
 Update the `NEXT_PUBLIC_CHATBOT_URL` value with your chatbot script URL:
 
@@ -16,6 +19,8 @@ Update the `NEXT_PUBLIC_CHATBOT_URL` value with your chatbot script URL:
 # Chatbot Configuration
 NEXT_PUBLIC_CHATBOT_URL=https://your-chatbot-domain.com/widget.js
 ```
+
+**Note:** If you don't set this variable, the default staging URL will be used automatically.
 
 ### Step 3: Restart the Development Server
 
